@@ -5,7 +5,7 @@ module objects {
     export class Control { 
         
         // CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++
-        constructor() {
+        constructor(public rotation1,public rotation2,public rotation3,public rotation4,public rotation5) {
 
         }
         
