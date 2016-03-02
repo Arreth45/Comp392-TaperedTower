@@ -11,11 +11,7 @@ module objects {
     export class Control { 
         
         // CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++
-        constructor(public rotation1,public rotation2,public rotation3,public rotation4,public rotation5) {
+        constructor(public rotation1:number,public rotation2:number,public rotation3:number,public rotation4:number,public rotation5:number) {
 
         }
-        
-        //PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++
-       
-    }
 }

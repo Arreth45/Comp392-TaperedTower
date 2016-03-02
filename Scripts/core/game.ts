@@ -61,7 +61,11 @@ var game = (() => {
     var cube5: Mesh;
 
     var cubeGeometry: CubeGeometry;
-    var cubeMaterial: LambertMaterial;
+    var cubeMaterial1: LambertMaterial;
+    var cubeMaterial2: LambertMaterial;
+    var cubeMaterial3: LambertMaterial;
+    var cubeMaterial4: LambertMaterial;
+    var cubeMaterial5: LambertMaterial;
 
     var axes: AxisHelper;
 
@@ -107,8 +111,8 @@ var game = (() => {
         
         //Add Base Cube
         cubeGeometry = new CubeGeometry(4, 2, 4);
-        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
-        cube1 = new Mesh(cubeGeometry, cubeMaterial);
+        cubeMaterial1 = new LambertMaterial({ color: Math.random() * 0xffffff });
+        cube1 = new Mesh(cubeGeometry, cubeMaterial1);
         cube1.position.setY(1);
         cube1.castShadow = true;
         cube1.receiveShadow = true;
@@ -117,8 +121,8 @@ var game = (() => {
         
         //Cube #2
         cubeGeometry = new CubeGeometry(3, 2, 3);
-        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
-        cube2 = new Mesh(cubeGeometry, cubeMaterial);
+        cubeMaterial2 = new LambertMaterial({ color: Math.random() * 0xffffff });
+        cube2 = new Mesh(cubeGeometry, cubeMaterial2);
         cube2.position.setY(3);
         cube2.receiveShadow = true;
         cube2.castShadow = true;
@@ -127,8 +131,8 @@ var game = (() => {
         
         //Cube #3
         cubeGeometry = new CubeGeometry(2, 2, 2);
-        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
-        cube3 = new Mesh(cubeGeometry, cubeMaterial);
+        cubeMaterial3 = new LambertMaterial({ color: Math.random() * 0xffffff });
+        cube3 = new Mesh(cubeGeometry, cubeMaterial3);
         cube3.position.setY(5);
         cube3.castShadow = true;
         cube3.receiveShadow = true;
@@ -137,8 +141,8 @@ var game = (() => {
         
         //Cube #4
         cubeGeometry = new CubeGeometry(1, 1, 1);
-        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
-        cube4 = new Mesh(cubeGeometry, cubeMaterial);
+        cubeMaterial4 = new LambertMaterial({ color: Math.random() * 0xffffff });
+        cube4 = new Mesh(cubeGeometry, cubeMaterial4);
         cube4.position.setY(6.5);
         cube4.receiveShadow = true;
         cube4.castShadow = true;
@@ -147,8 +151,8 @@ var game = (() => {
         
         //Cube #5
         cubeGeometry = new CubeGeometry(0.5, 0.5, 0.5);
-        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
-        cube5 = new Mesh(cubeGeometry, cubeMaterial);
+        cubeMaterial5 = new LambertMaterial({ color: Math.random() * 0xffffff });
+        cube5 = new Mesh(cubeGeometry, cubeMaterial5);
         cube5.position.setY(7.3);
         cube5.receiveShadow = true;
         cube5.castShadow = true;
@@ -202,7 +206,7 @@ var game = (() => {
         cube3.rotation.y += control.rotation3;
         cube4.rotation.y += control.rotation4;
         cube5.rotation.y += control.rotation5;
-        
+
         // render using requestAnimationFrame
         requestAnimationFrame(gameLoop);
 	
