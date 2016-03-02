@@ -3,7 +3,7 @@
 // Jake Parnell
 // Comp392 - MidTerm
 // Last Modified by: Jake Parnell
-// Date Last Modified Mar 1nd 2016
+// Date Last Modified Mar 2nd 2016
 // THREEJS Aliases
 var Scene = THREE.Scene;
 var Renderer = THREE.WebGLRenderer;

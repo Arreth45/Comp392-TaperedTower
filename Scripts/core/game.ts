@@ -4,7 +4,7 @@
 // Jake Parnell
 // Comp392 - MidTerm
 // Last Modified by: Jake Parnell
-// Date Last Modified Mar 1nd 2016
+// Date Last Modified Mar 2nd 2016
 
 // THREEJS Aliases
 import Scene = THREE.Scene;
@@ -104,6 +104,7 @@ var game = (() => {
         scene.add(ground);
         console.log("Added ground object to scene");
         
+        
         //Add Base Cube
         cubeGeometry = new CubeGeometry(4, 2, 4);
         cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
@@ -125,8 +126,8 @@ var game = (() => {
         console.log("Added 2nd object to scene");
         
         //Cube #3
-        cubeGeometry = new CubeGeometry(2, 2, 2); 
-        cubeMaterial = new LambertMaterial({color: Math.random() * 0xffffff });
+        cubeGeometry = new CubeGeometry(2, 2, 2);
+        cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
         cube3 = new Mesh(cubeGeometry, cubeMaterial);
         cube3.position.setY(5);
         cube3.castShadow = true;
@@ -135,7 +136,7 @@ var game = (() => {
         console.log("Added 2nd object to scene");
         
         //Cube #4
-        cubeGeometry = new CubeGeometry(1, 1, 1); 
+        cubeGeometry = new CubeGeometry(1, 1, 1);
         cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
         cube4 = new Mesh(cubeGeometry, cubeMaterial);
         cube4.position.setY(6.5);
@@ -145,7 +146,7 @@ var game = (() => {
         console.log("Added 2nd object to scene");
         
         //Cube #5
-        cubeGeometry = new CubeGeometry(0.5, 0.5, 0.5); 
+        cubeGeometry = new CubeGeometry(0.5, 0.5, 0.5);
         cubeMaterial = new LambertMaterial({ color: Math.random() * 0xffffff });
         cube5 = new Mesh(cubeGeometry, cubeMaterial);
         cube5.position.setY(7.3);
